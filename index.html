@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mappa con OpenStreetMap</title>
+
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-sA+g6V96Pc8af5cU0tG6QjaF5QQx6H7HcXWXYt0lY+I="
+      crossorigin=""
+    />
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Mappa con OpenStreetMap</h1>
+
+    <div id="map"></div>
+
+    <div class="controls">
+        <label>
+            Latitudine:
+            <input type="text" id="lat-input" placeholder="es. 41.8781">
+        </label>
+        <label>
+            Longitudine:
+            <input type="text" id="lng-input" placeholder="es. -87.6298">
+        </label>
+        <button id="go-btn">Vai!</button>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-o9N1j8g+R0XYgAZ/ScmX6fA4wA0d8ZjHR3jkq3uCtk8="
+      crossorigin=""
+    ></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
